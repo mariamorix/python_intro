@@ -25,4 +25,4 @@ ID: {id_number}
 Hair: {hair.capitalize():<25}Eyes: {eyes.capitalize()}
 Month: {month.capitalize():<24}Training: {training.capitalize()}
 ----------------------------------------------------
-""")
+""") 
