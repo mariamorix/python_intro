@@ -145,16 +145,82 @@ Wrong answer! You will never leave the castle!
                                        print("""
 Correct! 
 
-*********GAME OVER*********""")    
-      
+*********GAME OVER*********""")
+                            if seventh_question.lower() == "ignore" :
+                                 print("""
+Ignored, the cats started to meow. They wanted to play with someone, they are alone for such a long time! Their crying caught the attention of the Queen's ghost!
+She is mad that her cat is sad! She is never going to let you leave!
+
+*********GAME OVER*********""")
                     if fifth_question.lower() == "no":   
-                        seventh_question = input("""
+                        sixth_question = input("""
 If that is your decision, okay! But be aware the Queen's ghost is walking freely in the Castle! Will you keep exploring? YES or NO. """)
-                        if seventh_question.lower() == "yes":
-                        if seventh_question.lower() == "no":   
-            if third_question.lower() in ("note", "a note") : 
-            if third_question.lower() in ("cat's rattle", "a cat's rattle", "rattle") :  
-        if second_question.lower() in ("climb the stairs","climb","stairs","climb stairs") :
-        if second_question.lower() in ("read the message","read","message","read message") :   
-   if first_question.lower() in ("matches", "3 matches", "3") :
-       input()
+                        if sixth_question.lower() == "yes" :
+                            seventh_question = input("""
+You keep exploring, until you reach the end of the hall. 
+Now you only have two options, two doors, one in the LEFT and the other in the RIGHT.
+Which one will you open? """)
+                            if seventh_question.lower == "left" :
+                                print("""
+You are in a dark room, then you feel a strong breath right in front of you!
+This castle has many secrets and one of them is a beast hidden! The fear takes control of you, but then... peace!
+Everything ends so fast that you don't even notice! 
+You are now a ghost in this castle! 
+
+*********GAME OVER********* """)
+                            if seventh_question.lower == "right" :
+                                eighth_question = input("""
+You breath deep trying to regain your strenghts, but then you feel something in your legs!
+Calm down it's only tree cats: a black cat, a brown cat and a white cat. Will you PLAY with them or will you IGNORE them?""")
+                                if eighth_question.lower() == "play" :
+                                    ninth_question = input("""
+While you playing with the cats, the ghost of the Queen shows up. 
+You can't scape, will you CLOSE your eyes and pretend the she is not there or will you face your fears and TALK to her?  """)
+                                    if ninth_question.lower() == "close" :
+                                        print("""
+The Queen is not used to be ignored! She is so angry! She will never allow you to leave!
+You are going to be trapped here FOREVER!
+
+*********GAME OVER*********""")
+                                    if ninth_question.lower() == "talk" :
+                                        tenth_question = input("""
+The Queen is amazed by your courage! She is willing to let you go, but before you must answer her question:
+Which of the 3 cats is hers? The BLACK, WHITE OR BROWN?""")
+                                        if tenth_question.lower() == "black" :
+                                            print("""
+Wrong answer! You will never leave the castle!
+
+*********GAME OVER*********""")
+                                        if tenth_question.lower == "brown" :
+                                            print("""
+Wrong answer! You will never leave the castle!
+
+*********GAME OVER*********""")
+                                        if tenth_question.lower == "white":
+                                             print("""
+Correct! You are free to go!
+Congratulations, you've finished this game!""")    
+                                if eighth_question.lower() == "ignore" :
+                                     print("""
+Ignored, the cats started to meow. They wanted to play with someone, they are alone for such a long time! Their crying caught the attention of the Queen's ghost!
+She is mad that her cat is sad! She is never going to let you leave!
+
+*********GAME OVER*********""")
+                        if sixth_question.lower() == "no" :
+                            print("""
+Only an adventurous spirit will find the way out!
+You are going to be stuck here forever!
+*********GAME OVER*********""")
+
+elif scenario.lower() == "forest" :
+    print("""
+                     Forest Simulation is Under Development!
+                     Please try Castle Simulation or come back later!
+
+   """)
+else:
+    print("""
+                     Simulation not available!
+                     Try the options available or come back later!
+
+   """)
