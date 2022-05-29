@@ -335,7 +335,7 @@ She is mad that her cat is sad! She is never going to let you leave!
 Only an adventurous spirit will find the way out!
 You are going to be stuck here forever!
 *********GAME OVER********* """)
-            if third_question.lower() in ("a cat's rattle", "cat's rattle") :
+            if third_question.lower() in ("a cat's rattle", "cat's rattle","rattle") :
                 fourth_question = input("""
 What an weird thing to be found in a kitchen. Will you RING it or will you TOSS it on the trash?""")
                 if fourth_question.lower() == "ring" :
@@ -793,7 +793,7 @@ She is mad that her cat is sad! She is never going to let you leave!
 Only an adventurous spirit will find the way out!
 You are going to be stuck here forever!
 *********GAME OVER********* """)
-                 if fourth_question.lower() in ("a cat's rattle", "cat's rattle") :
+                 if fourth_question.lower() in ("a cat's rattle", "cat's rattle", "rattle") :
                     fifth_question = input("""
 What an weird thing to be found in a kitchen. Will you RING it or will you TOSS it on the trash?""")
                     if fifth_question.lower() == "ring" :
