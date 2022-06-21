@@ -1,13 +1,5 @@
-x = 6
-y = 6
+x = 5
 
-if x == 5:
-    print("a")
+x + 1
 
-    if y == 6:
-        print("b")
-else:
-    print("c")
-
-    if y == 10:
-        print("d")
+print(x)
