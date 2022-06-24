@@ -1,7 +1,7 @@
 # python_intro
 Introduction to Python Development
 
-Application of content and assigments from the course: Programming Building Blocks - BYU IDAHO. 
+Application of contents and assigments from the course: Programming Building Blocks - BYU IDAHO. 
 
 Week 01: Getting Started
  * Checkpoint: Print Hello World!
