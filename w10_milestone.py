@@ -8,16 +8,19 @@ product = ""
 cost = 0
 remove_item = 0
 total_cost = 0
+discount = 0
+new_total = 0
 option = 0
 
-while option != 5 :
+while option != 6 :
     option = int(input("""\nPlease select one of the following: 
 
 1. Add item
 2. View cart
 3. Remove item
 4. Compute total
-5. Quit
+5. Add Discount Cupom
+6. Quit
 
 Please enter an action: """))
     if option == 1 :
@@ -49,5 +52,12 @@ Please enter an action: """))
         print()
         total_cost = sum(prices)
         print(f"The total price of the items in the shopping cart is $ {total_cost:.2f}")
+    elif option == 5 :
+        discount = int(input("Please give the percentage of your discount cupom: "))
+        new_total = total_cost - (total_cost * discount / 100)
+        print()
+        print(f"The new total is: $ {new_total:.2f}")
+
+
 print()
 print("Thanks for shopping with us!")
