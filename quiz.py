@@ -1,5 +1,11 @@
-x = 5
+# with open("myfile.txt") as f:
 
-x + 1
+# for line in f:
 
-print(x)
+#     print(line)
+
+line = "     text"
+
+line.strip()
+
+print(line)
